@@ -48,9 +48,9 @@
 
         default_layer {
             bindings = <
-&lt 2 Q           &lt 3 W             &lt 2 E                   &mt LCTRL R             &mt LEFT_ALT T                                      &mt RCTRL Y                      &mt RIGHT_ALT U  &lt 2 I   &lt 3 O   &lt 2 P
-&lt 3 A           &lt 3 S             &lt 2 D                   &lt 1 F                 &lt 1 G         &kp LS(LG(S))      &lt 5 MINUS      &lt 1 H                          &lt 1 J          &lt 2 K   &lt 3 L   &lt 3 ENTER
-&mt LEFT_SHIFT Z  &lt 3 X             &lt 2 C                   &lt 1 V                 &lt 1 B         &lt 4 COLON        &lt 6 SEMICOLON  &lt 1 N                          &lt 1 M          &mkp MB1  &mkp MB2  &mt RIGHT_SHIFT SLASH
+&lt 2 Q           &lt 5 W             &lt 2 E                   &mt LCTRL R             &mt LEFT_ALT T                                      &mt RCTRL Y                      &mt RIGHT_ALT U  &lt 2 I   &lt 5 O   &lt 2 P
+&lt 5 A           &lt 5 S             &lt 2 D                   &lt 1 F                 &lt 1 G         &kp LS(LG(S))      &lt 6 MINUS      &lt 1 H                          &lt 1 J          &lt 2 K   &lt 5 L   &lt 5 ENTER
+&mt LEFT_SHIFT Z  &lt 5 X             &lt 2 C                   &lt 1 V                 &lt 1 B         &lt 3 COLON        &lt 4 SEMICOLON  &lt 1 N                          &lt 1 M          &mkp MB1  &mkp MB2  &mt RIGHT_SHIFT SLASH
 &kp CAPSLOCK      &mt LCTRL C_VOL_DN  &mt LEFT_ALT C_VOLUME_UP  &mt LEFT_COMMAND LANG2  &lt 1 SPACE     &lt 2 TAB          &lt 1 SPACE      &mt RIGHT_COMMAND LANG_HIRAGANA                                       &kp BACKSPACE
             >;
 
@@ -77,21 +77,12 @@
             >;
         };
 
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                      &kp RS(NUMBER_6)  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)
+&trans            &trans            &trans            &trans            &trans      &trans      &trans  &trans            &mkp MB1    &mkp MB3    &mkp MB2    &trans
+&trans            &trans            &trans            &trans            &trans      &trans      &trans  &trans            &trans      &trans      &trans      &trans
+&trans            &trans            &trans            &trans            &trans      &trans      &trans  &trans                                                &trans
             >;
         };
 
@@ -101,6 +92,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
