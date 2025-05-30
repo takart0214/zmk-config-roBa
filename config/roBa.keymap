@@ -12,29 +12,14 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <9 8>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
     };
 
@@ -63,22 +48,24 @@
 
         default_layer {
             bindings = <
-&lt 2 Q           &lt 3 W             &lt 2 E                   &mt LCTRL R             &mt LEFT_ALT T                                    &mt RIGHT_ALT Y                  &mt RCTRL U  &lt 2 I   &lt 3 O   &lt 2 P
-&lt 3 A           &lt 3 S             &lt 2 D                   &lt 1 F                 &lt 1 G         &kp LS(LG(S))      &kp MINUS      &lt 1 H                          &lt 1 J      &lt 2 K   &lt 3 L   &lt 3 ENTER
-&mt LEFT_SHIFT Z  &lt 3 X             &lt 2 C                   &lt 1 V                 &lt 1 B         &kp COLON          &kp SEMICOLON  &lt 1 N                          &lt 1 M      &mkp MB1  &mkp MB2  &mt RIGHT_SHIFT SLASH
-&kp CAPSLOCK      &mt LCTRL C_VOL_DN  &mt LEFT_ALT C_VOLUME_UP  &mt LEFT_COMMAND LANG2  &lt 1 SPACE     &lt 2 TAB          &lt 1 SPACE    &mt RIGHT_COMMAND LANG_HIRAGANA                                   &kp DEL
+&lt 2 Q           &lt 3 W             &lt 2 E                   &mt LCTRL R             &mt LEFT_ALT T                                    &mt RCTRL Y                      &mt RIGHT_ALT U  &lt 2 I   &lt 3 O   &lt 2 P
+&lt 3 A           &lt 3 S             &lt 2 D                   &lt 1 F                 &lt 1 G         &kp LS(LG(S))      &kp MINUS      &lt 1 H                          &lt 1 J          &lt 2 K   &lt 3 L   &lt 3 ENTER
+&mt LEFT_SHIFT Z  &lt 3 X             &lt 2 C                   &lt 1 V                 &lt 1 B         &kp COLON          &kp SEMICOLON  &lt 1 N                          &lt 1 M          &mkp MB1  &mkp MB2  &mt RIGHT_SHIFT SLASH
+&kp CAPSLOCK      &mt LCTRL C_VOL_DN  &mt LEFT_ALT C_VOLUME_UP  &mt LEFT_COMMAND LANG2  &lt 1 SPACE     &lt 2 TAB          &lt 1 SPACE    &mt RIGHT_COMMAND LANG_HIRAGANA                                       &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
+        ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp ESCAPE          &kp LS(LA(LEFT_ARROW))  &kp UP_ARROW    &kp LS(LA(RIGHT_ARROW))  &kp LS(UP_ARROW)                                &mt RIGHT_COMMAND UP_ARROW    &mt RIGHT_ALT LEFT_ARROW    &kp UP_ARROW                &mt RIGHT_ALT RIGHT_ARROW    &kp BACKSPACE
+&kp LS(LEFT_ARROW)  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp LS(RIGHT_ARROW)  &trans      &trans         &mt RIGHT_COMMAND LEFT_ARROW  &mt RIGHT_SHIFT LEFT_ARROW  &mt RIGHT_SHIFT DOWN_ARROW  &mt RIGHT_SHIFT RIGHT_ARROW  &mt RIGHT_COMMAND RIGHT_ARROW
+&kp LS(LEFT_ARROW)  &kp LG(LS(LEFT_ARROW))  &kp LG(T)       &kp LG(LS(RIGHT_ARROW))  &kp LS(DOWN_ARROW)   &trans      &trans         &mt RIGHT_COMMAND DOWN_ARROW  &kp RG(LEFT_BRACKET)        &kp RG(R)                   &kp RG(RIGHT_BRACKET)        &kp RS(RIGHT_ARROW)
+&kp LG(F)           &kp LG(MINUS)           &kp LG(EQUAL)   &kp F14                  &kp F15              &trans      &kp PAGE_DOWN  &kp PAGE_UP                                                                                                        &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         NUM {
@@ -90,15 +77,13 @@
             >;
         };
 
-        ARROW {
+        SCROLL {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
@@ -110,12 +95,12 @@
             >;
         };
 
-        SCROLL {
+        FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
             >;
         };
 
