@@ -70,10 +70,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1      &mt LEFT_SHIFT NUMBER_2  &kp LS(NUMBER_3)        &kp LS(A)                   &kp N5                                                       &kp NUMBER_6         &kp RS(N7)     &kp RS(N8)     &mt RIGHT_SHIFT N9  &kp N0
-&kp LC(LA(U))     &kp LA(LC(I))            &kp LA(LC(UP_ARROW))    &kp LA(LC(LEFT_ARROW))      &kp LA(LC(RIGHT_ARROW))      &trans      &trans              &kp RA(RC(RG(H)))    &kp RC(RA(D))  &kp RA(RC(F))  &kp RC(RA(G))       &kp RA(RC(ENTER))
-&kp LA(LC(J))     &kp LA(LC(K))            &kp LA(LC(DOWN_ARROW))  &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT_ARROW)))  &trans      &trans              &kp RA(RC(RG(R)))    &kp RA(RC(E))  &kp RA(RC(R))  &kp RA(RC(T))       &kp RA(RC(BACKSPACE))
-&kp LC(UP_ARROW)  &kp LA(LG(M))            &kp LA(LG(D))           &kp F11                     &kp LC(DOWN_ARROW)           &tog 2      &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)                                                    &to 0
+&kp NUMBER_1      &mt LEFT_SHIFT NUMBER_2  &mt LEFT_SHIFT NUMBER_3  &mt LEFT_SHIFT NUMBER_4     &kp N5                                                       &kp NUMBER_6         &mt RIGHT_SHIFT N7  &mt RIGHT_SHIFT N8  &mt RIGHT_SHIFT N9  &kp N0
+&kp LC(LA(U))     &kp LA(LC(I))            &kp LA(LC(UP_ARROW))     &kp LA(LC(LEFT_ARROW))      &kp LA(LC(RIGHT_ARROW))      &trans      &trans              &kp RA(RC(RG(H)))    &kp RC(RA(D))       &kp RA(RC(F))       &kp RC(RA(G))       &kp RA(RC(ENTER))
+&kp LA(LC(J))     &kp LA(LC(K))            &kp LA(LC(DOWN_ARROW))   &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT_ARROW)))  &trans      &trans              &kp RA(RC(RG(R)))    &kp RA(RC(E))       &kp RA(RC(R))       &kp RA(RC(T))       &kp RA(RC(BACKSPACE))
+&kp LC(UP_ARROW)  &kp LA(LG(M))            &kp LA(LG(D))            &kp F11                     &kp LC(DOWN_ARROW)           &to 2       &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)                                                              &to 0
             >;
         };
 
@@ -89,8 +89,8 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
