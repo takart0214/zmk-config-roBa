@@ -52,7 +52,7 @@
 &kp CAPSLOCK      &mt LCTRL C_VOL_DN  &mt LEFT_ALT C_VOLUME_UP  &mt LEFT_COMMAND LANGUAGE_2  &lt 1 SPACE  &lt 2 TAB      &lt 1 SPACE  &mt RIGHT_COMMAND LANGUAGE_1                                   &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW {
