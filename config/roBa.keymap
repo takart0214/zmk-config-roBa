@@ -11,18 +11,11 @@
 };
 
 / {
+  
     combos {
         compatible = "zmk,combos";
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <9 8>;
-        };
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
-        };
+        backspace { bindings = <&kp BACKSPACE>; key-positions = <9 8>; };
+        esc       { bindings = <&kp ESC>;       key-positions = <0 1>; };
     };
 
     macros {
@@ -32,43 +25,28 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-    };
+    };                      /* ←★ ここで macros を閉じる ★ */
 
     behaviors {
         layerMouse: layerMouse {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYERMOUSE";
             bindings = <&lt>, <&mkp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <2>;
-            quick-tap-ms = <1>;
-            require-prior-idle-ms = <(-1)>;
+            quick-tap-ms    = <1>;
             hold-trigger-key-positions = <32>;
-            hold-while-undecided;
         };
 
-        layerMouse2: layerMouse2 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYERMOUSE2";
-            bindings = <&lt>, <&mkp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <2>;
-            quick-tap-ms = <1>;
-            require-prior-idle-ms = <(-1)>;
-            hold-trigger-key-positions = <32>;
-            flavor = "tap-preferred";
+        scroll_up_down: scroll_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL_UP_DOWN";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms   = <20>;
         };
-
-　　　　scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-    　　　　　compatible = "zmk,behavior-sensor-rotate";
-   　　　　　 #sensor-binding-cells = <0>;
-    　　　　　bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-    　　　　　tap-ms = <20>;
-   　　　};
-  　　};
-　};
+    };
+};
 
 
 keymap {
