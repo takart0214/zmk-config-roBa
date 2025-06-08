@@ -33,11 +33,11 @@ macros {
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
     };
-};
+ };
 
 
-keymap {
-        compatible = "zmk,keymap";
+&keymap {
+        compatible = "zmk,keymap";+++++++++
 
         default_layer {
             bindings = <
