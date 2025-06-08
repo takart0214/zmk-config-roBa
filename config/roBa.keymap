@@ -33,11 +33,13 @@
         };
     };
 
-    behaviors {
-        scroll_up_down: scroll_up_down {
+  behaviors {
+        encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
         };
     };
 
@@ -52,7 +54,7 @@
 &kp CAPSLOCK      &mt LCTRL C_VOL_DN  &mt LEFT_ALT C_VOLUME_UP  &mt LEFT_COMMAND LANGUAGE_2  &lt 1 SPACE  &lt 2 TAB      &lt 1 SPACE  &mt RIGHT_COMMAND LANGUAGE_1                                   &kp BACKSPACE
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
