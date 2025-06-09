@@ -32,34 +32,6 @@
         };
     };
 
-    behaviors {
-        layerMouse: layerMouse {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYERMOUSE";
-            bindings = <&lt>, <&mkp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <2>;
-            quick-tap-ms = <1>;
-            require-prior-idle-ms = <(-1)>;
-            hold-trigger-key-positions = <32>;
-            hold-while-undecided;
-        };
-
-        layerMouse2: layerMouse2 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYERMOUSE2";
-            bindings = <&lt>, <&mkp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <2>;
-            quick-tap-ms = <1>;
-            require-prior-idle-ms = <(-1)>;
-            hold-trigger-key-positions = <32>;
-            flavor = "tap-preferred";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
