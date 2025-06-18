@@ -3,7 +3,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_MOUSE_POINTING_SCRL_VAL 100
+#define ZMK_MOUSE_POINTING_SCRL_VAL 80
+
+behaviors {
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
+        };
+    };
 
 &mt {
     flavor = "balanced";
@@ -34,15 +44,6 @@
         };
     };
 
-    behaviors {
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-    compatible = "zmk,behavior-sensor-rotate";
-    #sensor-binding-cells = <0>;
-    bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-    tap-ms = <20>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -54,7 +55,7 @@
 &kp CAPSLOCK      &mt LCTRL C_VOL_DN  &mt LEFT_ALT C_VOLUME_UP  &mt LEFT_COMMAND LANGUAGE_2  &lt 1 SPACE  &lt 2 TAB        &lt 1 SPACE   &mt RIGHT_COMMAND LANGUAGE_1                                   &to 1
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
