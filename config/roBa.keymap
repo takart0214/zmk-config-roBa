@@ -8,6 +8,10 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 / {
+   aliases {
+        mkp_BTN2 = &mkp BTN2;
+    };
+
     behaviors {
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
@@ -24,10 +28,6 @@
 
             tap-ms = <1>;
         };
-
-       aliases {
-            mkp_BTN2 = &mkp BTN2;
-       };
    };
 
     combos {
