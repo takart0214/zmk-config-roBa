@@ -8,9 +8,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 / {
-   aliases {
-        mkp_BTN2 = &mkp BTN2;
-    };
+    aliases { mkp_BTN2 = &mkp, BTN2; };
 
     behaviors {
         encoder_msc_down_up: encoder_msc_down_up {
@@ -28,7 +26,7 @@
 
             tap-ms = <1>;
         };
-   };
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -58,10 +56,10 @@
 
         default_layer {
             bindings = <
-&lt 2 Q           &lt 5 W             &lt 3 E                   &lt 4 R               &lt 6 T                                           &mt RIGHT_GUI Y   &mt RIGHT_ALT U  &mt RCTRL I  &lt 5 O  &lt 2 P
-&lt 5 A           &lt 5 S             &lt 2 D                   &lt 1 F               &lt 1 G           &lt 5 LS(N9)      &lt 5 RS(N0)  &lt 1 H           &lt 1 J          &lt 2 K      &lt 5 L  &lt 5 ENTER
-&mt LEFT_SHIFT Z  &lt 5 X             &lt 2 C                   &lt 1 V               &lt 1 B           &lt 4 MINUS       &lt 4 EQUAL   &lt 1 N           &mkp MB1         &lt 2 &mkp_BTN2       &mt RIGHT_SHIFT SLASH
-&kp CAPSLOCK      &mt LCTRL C_VOL_DN  &mt LEFT_ALT C_VOLUME_UP  &mt LEFT_COMMAND TAB  &lt 2 LANGUAGE_2  &lt 1 SPACE       &lt 1 SPACE   &lt 2 LANGUAGE_1                                         &to 1
+&lt 2 Q           &lt 5 W             &lt 3 E                   &lt 4 R               &lt 6 T                                           &mt RIGHT_GUI Y   &mt RIGHT_ALT U  &mt RCTRL I  &lt 5 O    &lt 2 P
+&lt 5 A           &lt 5 S             &lt 2 D                   &lt 1 F               &lt 1 G           &lt 5 LS(N9)      &lt 5 RS(N0)  &lt 1 H           &lt 1 J          &lt 2 K      &lt 5 L    &lt 5 ENTER
+&mt LEFT_SHIFT Z  &lt 5 X             &lt 2 C                   &lt 1 V               &lt 1 B           &lt 4 MINUS       &lt 4 EQUAL   &lt 1 N           &mkp MB1         &lt 2        &mkp_BTN2  &mt RIGHT_SHIFT SLASH
+&kp CAPSLOCK      &mt LCTRL C_VOL_DN  &mt LEFT_ALT C_VOLUME_UP  &mt LEFT_COMMAND TAB  &lt 2 LANGUAGE_2  &lt 1 SPACE       &lt 1 SPACE   &lt 2 LANGUAGE_1                                           &to 1
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -69,10 +67,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE          &kp LS(LA(LEFT_ARROW))     &kp UP_ARROW               &kp LS(LA(RIGHT_ARROW))     &kp LS(UP_ARROW)                                            &kp RG(UP_ARROW)    &kp RA(LEFT_ARROW)          &kp UP_ARROW                &kp RA(RIGHT_ARROW)          &kp BACKSPACE
-&kp LS(LEFT_ARROW)  &mt LEFT_SHIFT LEFT_ARROW  &mt LEFT_SHIFT DOWN_ARROW  &mt LEFT_SHIFT RIGHT_ARROW  &kp LS(RIGHT_ARROW)  &trans      &mt RIGHT_SHIFT PAGE_UP    &kp RG(LEFT_ARROW)  &mt RIGHT_SHIFT LEFT_ARROW  &mt RIGHT_SHIFT DOWN_ARROW  &mt RIGHT_SHIFT RIGHT_ARROW  &kp RG(RIGHT_ARROW)
-&kp LS(LEFT_ARROW)  &kp LG(LA(LEFT_ARROW))     &kp LG(T)                  &kp LG(LA(RIGHT_ARROW))     &kp LS(DOWN_ARROW)   &trans      &mt RIGHT_SHIFT PAGE_DOWN  &kp RG(DOWN_ARROW)  &kp RG(LEFT_BRACKET)        &kp RG(R)                   &kp RG(RIGHT_BRACKET)        &kp RS(RIGHT_ARROW)
-&kp LG(F)           &kp LG(MINUS)              &kp LG(EQUAL)              &kp F14                     &kp F15              &trans      &kp PAGE_DOWN              &kp PAGE_UP                                                                                              &to 2
+&kp ESCAPE          &kp LS(LA(LEFT_ARROW))     &kp UP_ARROW               &kp LS(LA(RIGHT_ARROW))     &kp LS(UP_ARROW)                                          &kp RG(UP_ARROW)    &kp RA(LEFT_ARROW)          &kp UP_ARROW                &kp RA(RIGHT_ARROW)          &kp BACKSPACE
+&kp LS(LEFT_ARROW)  &mt LEFT_SHIFT LEFT_ARROW  &mt LEFT_SHIFT DOWN_ARROW  &mt LEFT_SHIFT RIGHT_ARROW  &kp LS(RIGHT_ARROW)  &msc SCRL_LEFT       &msc SCRL_UP    &kp RG(LEFT_ARROW)  &mt RIGHT_SHIFT LEFT_ARROW  &mt RIGHT_SHIFT DOWN_ARROW  &mt RIGHT_SHIFT RIGHT_ARROW  &kp RG(RIGHT_ARROW)
+&kp LS(LEFT_ARROW)  &kp LG(LA(LEFT_ARROW))     &kp LG(T)                  &kp LG(LA(RIGHT_ARROW))     &kp LS(DOWN_ARROW)   &msc SCRL_RIGHT      &msc SCRL_DOWN  &kp RG(DOWN_ARROW)  &kp RG(LEFT_BRACKET)        &kp RG(R)                   &kp RG(RIGHT_BRACKET)        &kp RS(RIGHT_ARROW)
+&kp LG(F)           &kp LG(MINUS)              &kp LG(EQUAL)              &kp F14                     &kp F15              &kp LG(W)            &kp PAGE_DOWN   &kp PAGE_UP                                                                                              &to 2
             >;
 
             sensor-bindings = <&encoder_arrow_ud>;
