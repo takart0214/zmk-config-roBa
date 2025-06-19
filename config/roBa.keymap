@@ -22,7 +22,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp UP_ARROW>, <&kp DOWN_ARROW>;
 
-            tap-ms = <2>;
+            tap-ms = <1>;
         };
     };
 
