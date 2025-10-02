@@ -34,9 +34,9 @@
             key-positions = <9 8>;
         };
 
-　　　　tab {
-            bindings = <&kp TAB>;
-            key-positions = <5 6>;
+       tab {
+        bindings = <&kp TAB>;
+        key-positions = <5 6>;
         };
 
         esc {
