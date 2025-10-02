@@ -34,11 +34,6 @@
             key-positions = <9 8>;
         };
 
-       tab {
-        bindings = <&kp TAB>;
-        key-positions = <5 6>;
-        };
-
         esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
@@ -128,5 +123,5 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <100>;
+    quick-tap-ms = <0>;
 };
