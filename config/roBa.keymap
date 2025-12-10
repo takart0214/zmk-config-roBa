@@ -75,16 +75,16 @@
 &kp NUMBER_1              &mt LEFT_SHIFT NUMBER_2  &kp NUMBER_3            &kp NUMBER_4                &kp N5                                                          &kp NUMBER_6         &kp N7         &kp N8         &mt RIGHT_SHIFT N9  &kp N0
 &kp LC(LA(U))             &kp LA(LC(I))            &kp LA(LC(UP_ARROW))    &kp LA(LC(LEFT_ARROW))      &kp LA(LC(RIGHT_ARROW))      &trans         &trans              &kp RA(RC(ENTER))    &kp RC(RA(D))  &kp RA(RC(F))  &kp RC(RA(G))       &kp RA(RC(RG(H)))
 &mt LEFT_SHIFT LC(LA(J))  &kp LA(LC(K))            &kp LA(LC(DOWN_ARROW))  &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT_ARROW)))  &kt LSHFT      &trans              &kp RA(RC(DELETE))   &kp RA(RC(E))  &kp RC(RA(R))  &kp RC(RA(T))       &mt RIGHT_SHIFT RA(RC(RG(R)))
-&kp LC(UP_ARROW)          &kp LC(DOWN_ARROW)       &kp F11                 &kp LA(LG(M))               &kp LG(LA(D))                &kp LSHFT      &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)                                                    &trans
+&kp LC(UP_ARROW)          &kp LC(DOWN_ARROW)       &kp F11                 &kp LA(LG(M))               &kp LG(LA(D))                &kp LSHFT      &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)                                                    &to 3
             >;
         };
 
         VIDEO {
             bindings = <
-&kp LG(LA(F1))      &kp LG(LEFT_BRACKET)  &kp UP_ARROW    &kp LG(RIGHT_BRACKET)  &kp LG(LA(RIGHT_ARROW))                           &kp RG(RA(LEFT_ARROW))  &kp RG(LEFT_BRACKET)  &kp UP_ARROW    &kp RG(RIGHT_BRACKET)  &kp RG(RA(RIGHT_ARROW))
-&kp LS(LEFT_ARROW)  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT_ARROW        &kp LS(RIGHT_ARROW)      &trans      &trans       &kp LS(LEFT_ARROW)      &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT_ARROW        &kp RS(RIGHT_ARROW)
-&trans              &kp LG(MINUS)         &kp LG(EQUAL)   &mkp MB1               &trans                   &trans      &trans       &kp RC(RA(ENTER))       &kp RA(RC(DELETE))    &mkp LCLK       &trans                 &trans
-&kp LG(W)           &kp C_VOL_DN          &kp C_VOL_UP    &kp F14                &kp F15                  &trans      &kp PAGE_UP  &kp PAGE_DOWN                                                                        &kp RG(W)
+&kp LG(LA(F1))      &kp LG(LEFT_BRACKET)  &kp UP_ARROW    &kp LG(RIGHT_BRACKET)  &kp LG(LA(RIGHT_ARROW))                                     &kp RG(RA(LEFT_ARROW))  &kp RG(LEFT_BRACKET)  &kp UP_ARROW    &kp RG(RIGHT_BRACKET)  &kp RG(RA(RIGHT_ARROW))
+&kp LS(LEFT_ARROW)  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT_ARROW        &kp LS(RIGHT_ARROW)      &trans      &trans                 &kp LS(LEFT_ARROW)      &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT_ARROW        &kp RS(RIGHT_ARROW)
+&trans              &kp LG(MINUS)         &kp LG(EQUAL)   &mkp MB1               &trans                   &trans      &trans                 &kp RC(RA(ENTER))       &kp RA(RC(DELETE))    &mkp LCLK       &trans                 &trans
+&to 0               &kp C_VOL_DN          &kp C_VOL_UP    &kp F14                &kp F15                  &trans      &mt RIGHT_GUI PAGE_UP  &kp PAGE_DOWN                                                                        &kp RG(W)
             >;
         };
 
@@ -99,10 +99,10 @@
 
         SCROLL {
             bindings = <
-&trans                &trans                &trans             &kp LS(LG(NUMBER_4))      &kp LS(LG(N5))                                                       &kp RS(N9)             &kp RS(N0)     &trans         &kp RS(N9)        &kp RS(N0)
-&kp LS(GRAVE)         &kp LA(LC(LG(S)))     &kp LA(LC(LG(D)))  &kp LA(LC(LG(F)))         &kp LA(LC(LG(G)))         &trans              &kp RIGHT_SHIFT        &kp RS(SEMICOLON)      &kp SEMICOLON  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&mt LEFT_SHIFT GRAVE  &kp LA(LC(LG(X)))     &trans             &trans                    &trans                    &kp LEFT_SHIFT      &kp RIGHT_SHIFT        &kp RS(SQT)            &kp SQT        &kp COMMA      &kp PERIOD        &trans
-&kp LC(LS(K_POWER))   &kp LS(LG(NUMBER_2))  &kp LA(LC(LG(E)))  &mt LEFT_SHIFT LS(LG(V))  &mt LEFT_SHIFT LG(LS(C))  &kt LSHFT           &mt RIGHT_SHIFT MINUS  &mt RIGHT_SHIFT EQUAL                                                  &trans
+&kp LS(GRAVE)        &trans                &trans             &kp LS(LG(NUMBER_4))      &kp LS(LG(N5))                                                  &kp RS(N9)             &kp RS(N0)     &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp MINUS
+&kp GRAVE            &trans                &trans             &trans                    &trans                    &trans         &trans                 &kp RS(SEMICOLON)      &kp SEMICOLON  &trans            &kp NON_US_BACKSLASH  &kp EQUAL
+&kp LEFT_SHIFT       &trans                &trans             &trans                    &trans                    &trans         &trans                 &kp RS(SQT)            &kp SQT        &kp COMMA         &kp PERIOD            &mt RIGHT_SHIFT RS(MINUS)
+&kp LC(LS(K_POWER))  &kp LS(LG(NUMBER_2))  &kp LA(LC(LG(E)))  &mt LEFT_SHIFT LS(LG(V))  &mt LEFT_SHIFT LG(LS(C))  &kt LSHFT      &mt RIGHT_SHIFT MINUS  &mt RIGHT_SHIFT EQUAL                                                         &kp RS(EQUAL)
             >;
         };
 
