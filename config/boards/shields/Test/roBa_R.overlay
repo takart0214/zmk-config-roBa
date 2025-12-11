@@ -23,7 +23,9 @@
 
         scroll_layer5 {
             layers = <5>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
+            input-processors =
+                <&zip_xy_scaler 1 8>,
+                <&zip_xy_to_scroll_mapper>;
         };
     };
 };
