@@ -24,7 +24,7 @@
         scroll_layer5 {
             layers = <5>;
             input-processors =
-                <&zip_xy_scaler 1 32>,
+                <&zip_xy_scaler (-1) 40>,
                 <&zip_xy_to_scroll_mapper>;
         };
     };
