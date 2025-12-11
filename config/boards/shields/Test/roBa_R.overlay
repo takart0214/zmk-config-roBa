@@ -1,4 +1,5 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <input/processors.dtsi>
 #include "roBa.dtsi"
 
 &default_transform {
