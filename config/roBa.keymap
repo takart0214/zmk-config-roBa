@@ -83,7 +83,7 @@
             bindings = <
 &trans              &kp LA(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LG(LA(RIGHT_ARROW))  &trans                                                  &kp RG(RA(LEFT_ARROW))  &kp RG(RA(LEFT_ARROW))  &kp UP_ARROW    &lt 5 RG(RA(RIGHT_ARROW))  &kp RG(RA(RIGHT_ARROW))
 &kp LS(LEFT_ARROW)  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp LS(RIGHT_ARROW)  &trans      &trans                 &kp LS(LEFT_ARROW)      &kp LEFT_ARROW          &kp DOWN_ARROW  &lt 5 RIGHT_ARROW          &kp RS(RIGHT_ARROW)
-&trans              &kp LG(MINUS)           &kp LG(EQUAL)   &mkp MB1                 &trans               &trans      &trans                 &kp RC(RA(ENTER))       &kp RG(LEFT_BRACKET)    &mkp LCLK       &kp RG(RIGHT_BRACKET)      &kp RC(RA(DELETE))
+&trans              &kp LG(MINUS)           &kp LG(EQUAL)   &mkp MB1                 &trans               &trans      &trans                 &kp RC(RA(ENTER))       &kp RG(LEFT_BRACKET)    &mkp MB1        &kp RG(RIGHT_BRACKET)      &kp RC(RA(DELETE))
 &to 0               &kp C_VOL_DN            &kp C_VOL_UP    &kp F14                  &kp F15              &trans      &mt RIGHT_GUI PAGE_UP  &kp PAGE_DOWN                                                                              &kp RG(W)
             >;
         };
