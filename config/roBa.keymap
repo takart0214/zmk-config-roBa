@@ -61,10 +61,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE              &kp LA(LG(LEFT_ARROW))  &kp UP_ARROW               &kp LA(LG(RIGHT_ARROW))  &kp LG(T)                                                         &kp BACKSPACE       &kp RA(RG(LEFT_ARROW))      &kp UP_ARROW                &kp RA(RG(RIGHT_ARROW))      &kp BACKSPACE
-&kp LS(LA(LEFT_ARROW))  &kp LS(LEFT_ARROW)      &mt LEFT_SHIFT DOWN_ARROW  &kp LS(RIGHT_ARROW)      &kp LS(LA(RIGHT_ARROW))  &msc SCRL_LEFT       &kp RG(UP_ARROW)    &kp RA(LEFT_ARROW)  &mt RIGHT_SHIFT LEFT_ARROW  &mt RIGHT_SHIFT DOWN_ARROW  &mt RIGHT_SHIFT RIGHT_ARROW  &kp RA(RIGHT_ARROW)
-&kp LS(UP_ARROW)        &kp LG(LEFT_BRACKET)    &kp LG(R)                  &kp LG(RIGHT_BRACKET)    &kp LS(DOWN_ARROW)       &msc SCRL_RIGHT      &kp RG(DOWN_ARROW)  &kp RG(LEFT_ARROW)  &kp RG(LEFT_BRACKET)        &kp RG(R)                   &kp RG(RIGHT_BRACKET)        &kp RG(RIGHT_ARROW)
-&kp LG(F)               &kp LG(MINUS)           &kp LG(EQUAL)              &kp F14                  &kp F15                  &kp LSHFT            &kp PAGE_DOWN       &kp PAGE_UP                                                                                              &kp RG(W)
+&kp ESCAPE              &kp LA(LG(LEFT_ARROW))  &kp UP_ARROW               &kp LA(LG(RIGHT_ARROW))  &kp LG(T)                                                        &kp BACKSPACE       &kp RA(RG(LEFT_ARROW))      &kp UP_ARROW                &kp RA(RG(RIGHT_ARROW))      &kp BACKSPACE
+&kp LS(LA(LEFT_ARROW))  &kp LS(LEFT_ARROW)      &mt LEFT_SHIFT DOWN_ARROW  &kp LS(RIGHT_ARROW)      &kp LS(LA(RIGHT_ARROW))  &mmv MOVE_UP        &kp RG(UP_ARROW)    &kp RA(LEFT_ARROW)  &mt RIGHT_SHIFT LEFT_ARROW  &mt RIGHT_SHIFT DOWN_ARROW  &mt RIGHT_SHIFT RIGHT_ARROW  &kp RA(RIGHT_ARROW)
+&kp LS(UP_ARROW)        &kp LG(LEFT_BRACKET)    &kp LG(R)                  &kp LG(RIGHT_BRACKET)    &kp LS(DOWN_ARROW)       &msc SCRL_DOWN      &kp RG(DOWN_ARROW)  &kp RG(LEFT_ARROW)  &kp RG(LEFT_BRACKET)        &kp RG(R)                   &kp RG(RIGHT_BRACKET)        &kp RG(RIGHT_ARROW)
+&kp LG(F)               &kp LG(MINUS)           &kp LG(EQUAL)              &kp F14                  &kp F15                  &kp LSHFT           &kp PAGE_DOWN       &kp PAGE_UP                                                                                              &kp RG(W)
             >;
 
             sensor-bindings = <&encoder_arrow_ud>;
@@ -72,10 +72,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1              &mt LEFT_SHIFT NUMBER_2  &kp NUMBER_3            &kp NUMBER_4                &kp N5                                                          &kp NUMBER_6         &kp N7         &kp N8         &mt RIGHT_SHIFT N9  &kp N0
-&kp LC(LA(U))             &kp LA(LC(I))            &kp LA(LC(UP_ARROW))    &kp LA(LC(LEFT_ARROW))      &kp LA(LC(RIGHT_ARROW))      &trans         &trans              &kp RA(RC(ENTER))    &kp RC(RA(D))  &kp RA(RC(F))  &kp RC(RA(G))       &kp RA(RC(RG(H)))
-&mt LEFT_SHIFT LC(LA(J))  &kp LA(LC(K))            &kp LA(LC(DOWN_ARROW))  &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT_ARROW)))  &kt LSHFT      &trans              &kp RA(RC(DELETE))   &kp RA(RC(E))  &kp RC(RA(R))  &kp RC(RA(T))       &mt RIGHT_SHIFT RA(RC(RG(R)))
-&kp LC(UP_ARROW)          &kp LC(DOWN_ARROW)       &kp F11                 &kp LA(LG(M))               &kp LG(LA(D))                &kp LSHFT      &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)                                                    &to 3
+&kp NUMBER_1              &mt LEFT_SHIFT NUMBER_2  &kp NUMBER_3            &kp NUMBER_4                &kp N5                                                                &kp NUMBER_6         &kp N7         &kp N8         &mt RIGHT_SHIFT N9  &kp N0
+&kp LC(LA(U))             &kp LA(LC(I))            &kp LA(LC(UP_ARROW))    &kp LA(LC(LEFT_ARROW))      &kp LA(LC(RIGHT_ARROW))      &mmv MOVE_LEFT       &trans              &kp RA(RC(ENTER))    &kp RC(RA(D))  &kp RA(RC(F))  &kp RC(RA(G))       &kp RA(RC(RG(H)))
+&mt LEFT_SHIFT LC(LA(J))  &kp LA(LC(K))            &kp LA(LC(DOWN_ARROW))  &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT_ARROW)))  &mmv MOVE_RIGHT      &trans              &kp RA(RC(DELETE))   &kp RA(RC(E))  &kp RC(RA(R))  &kp RC(RA(T))       &mt RIGHT_SHIFT RA(RC(RG(R)))
+&kp LC(UP_ARROW)          &kp LC(DOWN_ARROW)       &kp F11                 &kp LA(LG(M))               &kp LG(LA(D))                &kp LSHFT            &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)                                                    &to 3
             >;
         };
 
