@@ -18,10 +18,23 @@
 #
 ---
 include:
- - board: xiao_ble
-   shield: roBa_R
-   snippet: studio-rpc-usb-uart
- - board: xiao_ble
-   shield: roBa_L
- - board: xiao_ble
-   shield: settings_reset
+  # ✅ 右手：普段用（snippet無し）
+  - board: xiao_ble
+    shield: roBa_R
+    artifact-name: roBa_R_normal
+
+  # ✅ 右手：Studio用（snippetあり）
+  - board: xiao_ble
+    shield: roBa_R
+    snippet: studio-rpc-usb-uart
+    artifact-name: roBa_R_studio
+
+  # ✅ 左手：普段用
+  - board: xiao_ble
+    shield: roBa_L
+    artifact-name: roBa_L
+
+  # ✅ 設定全消し用
+  - board: xiao_ble
+    shield: settings_reset
+    artifact-name: settings_reset
