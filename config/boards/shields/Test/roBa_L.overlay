@@ -14,3 +14,10 @@
 &left_encoder {
     status = "okay";
 };
+
+/ {
+    keepalive_listener {
+        compatible = "zmk,input-listener";
+        device = <&kscan0>;
+    };
+};
