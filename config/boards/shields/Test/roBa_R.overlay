@@ -69,6 +69,9 @@
         zephyr,axis-x = <INPUT_REL_Y>;
         zephyr,axis-y = <INPUT_REL_X>;
         invert-y;
+
+        res-cpi = <1600>;
+        smart-mode;
     };
 };
 
