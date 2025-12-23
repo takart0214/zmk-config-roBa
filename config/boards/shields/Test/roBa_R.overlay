@@ -33,7 +33,6 @@
     keepalive_listener {
         compatible = "zmk,input-listener";
         device = <&kscan0>;
-        wakeup-source;
     };
 };
 
