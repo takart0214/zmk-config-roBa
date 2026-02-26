@@ -18,7 +18,13 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        transform = <&trackball_transform>;
+    };
+};
 
+&default_transform {
+    trackball_transform: trackball_transform {
+        invert-x;
     };
 };
 
@@ -61,8 +67,6 @@ trackball: trackball@0 {
 
     zephyr,axis-x = <INPUT_REL_Y>;
     zephyr,axis-y = <INPUT_REL_X>;
-
-    orientation = <1>;
 };
 };
 
