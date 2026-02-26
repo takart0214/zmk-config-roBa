@@ -22,7 +22,7 @@
         device = <&trackball>;
 
         /* カーソル速度：まずは少し速め */
-        input-processors = <&zip_xy_scaler 3 2>;
+        input-processors = <&zip_xy_scaler 3 4>;
 
         /* SCROLLレイヤー(5)の間だけスクロール変換 */
         scroller {
