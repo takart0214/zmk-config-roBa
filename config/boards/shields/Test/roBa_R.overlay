@@ -21,10 +21,10 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /* 通常時のカーソル速度（例：少し遅くしたいなら 3/4、速くしたいなら 3/2 など） */
+        /* カーソル速度：まずは少し速め */
         input-processors = <&zip_xy_scaler 3 2>;
 
-        /* レイヤー5（あなたのSCROLLレイヤー）を押してる間だけスクロール化 */
+        /* SCROLLレイヤー(5)の間だけスクロール変換 */
         scroller {
             layers = <5>;
             input-processors = <&zip_xy_to_scroll_mapper>;
