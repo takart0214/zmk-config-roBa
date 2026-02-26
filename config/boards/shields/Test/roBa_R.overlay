@@ -22,7 +22,7 @@
         device = <&trackball>;
 
         /* 通常時のカーソル速度（例：少し遅くしたいなら 3/4、速くしたいなら 3/2 など） */
-        input-processors = <&zip_xy_scaler 3 4>;
+        input-processors = <&zip_xy_scaler 3 2>;
 
         /* レイヤー5（あなたのSCROLLレイヤー）を押してる間だけスクロール化 */
         scroller {
