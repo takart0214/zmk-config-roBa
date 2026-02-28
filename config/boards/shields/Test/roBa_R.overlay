@@ -72,7 +72,6 @@ trackball: trackball@0 {
     zephyr,axis-x = <INPUT_REL_Y>;
     zephyr,axis-y = <INPUT_REL_X>;
 
-    invert-x;
     invert-y;
 };
 };
